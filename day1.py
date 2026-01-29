@@ -1,0 +1,15 @@
+name=input('what is your name?: ')
+age=input('what is your age?: ')
+Thelength=input('How big are you?: ')
+print("hello world")
+print('     O')
+print('    /|\\ ')
+print('     |'+'='*int(Thelength) +'D')
+print('    / \\ ')
+print("Name: "+name)
+print("age: "+age)
+is_he_big= True
+hight=input('How tall are you:? ')
+hight=float(hight)*100
+print(type(hight))
+print(hight,'cm')
