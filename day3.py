@@ -98,6 +98,14 @@ for number_of_x in shape_list:
     print(x)
 
 
+list_of_numbers=[1, 3, 5, 33, 23, 33, 121, 23]
+bignumber=list_of_numbers[0]
+for big in list_of_numbers:
+    if big>bignumber:
+        bignumber=big
+print(bignumber)
+
+
 
 
 
