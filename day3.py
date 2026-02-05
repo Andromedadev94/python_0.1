@@ -1,4 +1,4 @@
-
+'''
 correct_num=9
 remaining_guess=3
 while remaining_guess>=1:  #as long as this line is true, python executes whatever in under unless we say break!
@@ -104,6 +104,14 @@ for big in list_of_numbers:
     if big>bignumber:
         bignumber=big
 print(bignumber)
+'''
+#turned it into a function
+def greater_num(list_of_numbers):
+    bignumber=list_of_numbers[0]
+    for big in list_of_numbers:
+        if big>bignumber:
+            bignumber=big
+    return bignumber
 
 
 
