@@ -12,7 +12,7 @@ if False:
     file1.write("Akiara, 22, Male\n")
     file1.write("Sara, 17, Female\n")
     file1.close()
-                                            best is to use with x as variablename: to open file or open connection, so it closes them auto
+    #best is to use with x as variablename: to open file or open connection, so it closes them auto
 
     with open("../python-0.2test/test4.csv", "a+") as file1:
         file1.write("yotoro, 29, Male\n")      
@@ -36,4 +36,6 @@ if False:
 
     import shutil
     shutil.copy("day8.py", "day12.py")
+
+
 
