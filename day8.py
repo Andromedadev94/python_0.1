@@ -17,7 +17,11 @@ quote = 'Not all those who wander are lost.'
 print(re.findall(pattern, quote))
 
 
-pattern = r'\.'  # to turn the string into raw string
-quote = 'Not all those who wander are lost.'
+pattern = r'\.'  # since . means all, if we want to find . itself, we use \.
+quote = 'Not all those who wander are lost.' # and r to means raw string, it will ignore the special meaning of \ and treat it as a normal character
 # print(re.findall(pattern, quote))
+# \d - digit
+# \w - word character
+#  \. - literal period
+# \s - whitespace
 

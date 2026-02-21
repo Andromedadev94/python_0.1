@@ -12,6 +12,20 @@ for rows in matrix_list:
 matrix_list[0][0]= 12
 print(matrix_list[0][0])
 
+list_a= ["a", "b", "c"]
+list_b= [1, 2, 3]
+list_c= list_a + list_b
+list_d= list_a * 2
+print(list_c, list_d)
+
+list_a= ["a", "b", "c"]
+del list_a[0]  #to delete a value at an index
+print(list_a)
+
+cat = ['fat', 'gray', 'loud']
+for index, item in enumerate(cat): #instead of range of list
+    print(index, item)
+
 #list methods
 list_of_numbers=[1,5,2,77,3,44,2]
 print(list_of_numbers.count(2)) # to check how many of an item is in the list
@@ -65,7 +79,8 @@ user_data={
     "married":False
 }
 print(user_data)
-print(user_data.get("name"))
+print(user_data.get("name", "country")) #get can take two parameters, second on will be used
+                                        # if first key was not in the dictionary
 
 
 
@@ -85,3 +100,10 @@ translation={
 }
 for part in p_number:
     print(translation.get(part), end=" and ")  #the end part we tell the print fuction to what to do after each word being printed, default is going to next line
+
+spam = {'color': 'red', 'age': 42}
+print(list(spam.values()))
+print(list(spam.keys()))
+print(spam.items())
+for key, value in spam.items():
+    print(f"key = {key}, and value = {value}")
